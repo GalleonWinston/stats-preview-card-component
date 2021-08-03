@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $veryDarkBlue;
+    color: $white;
+    font-family: inter;
+    font-size: 15px;
+    height: 150vh;   
+}
+
+.container {
+    position: relative;
+    top: 90px;  
+    margin: 0  6.4%;  
+}
+
+.wrapper{
+    background-color: $darkDesaturatedBlue;
+    padding: 0px 34px;
+}
+
+.header {
+    text-align: center;
+    
+    &__h1 {
+        padding-top: 45px;
+        font-size: 1.75rem;
+
+        span {
+            color: $softViolet;
+        }
+    }
+
+    &__p {
+        line-height: 23px;
+        padding-top: 20px;
+        color: $slightlyTranparentWhiteMainParagraph;
+    }
+}
+
+.image--mobile {
+    position: relative;
+    background-image: url(../../images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 73.3%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: $softViolet;
+        opacity: 0.45;        
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+}
+
+.data {
+    padding-top: 26px;
+
+    &--list {
+        text-align: center;
+        padding-bottom: 31px;
+
+        &__h1 {
+            font-size: 24px;
+        }
+
+        &__p {
+            padding-top: 7px;
+            color: $slightlyTransparentWhiteStatHeadings;
+            font-family: 'lexend deca';
+        }
+    }
+
+    &--list:last-child {
+        padding-bottom: 35px;
+    }
+}
+
+.attribution {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+}
+

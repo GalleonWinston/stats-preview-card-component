@@ -1,0 +1,89 @@
+@media (min-width: 1440px) {
+
+    .container {
+        display: flex;
+        top: 175px;
+        margin: 0 11.4%;
+    }
+
+    .wrapper {
+        order: 1;
+        padding-right: 120px;
+        padding-left: 70px;
+    }
+
+    .header {
+        text-align: left;
+        
+        &__h1 {
+            padding-top: 75px;
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+    
+        &__p {
+            line-height: 23px;
+            padding-top: 28px;
+        }
+    }
+
+    .image {
+        order: 2;
+    }
+
+    .image--mobile {
+        display: none;
+    }
+
+    .image--desktop {
+        position: relative;
+        background-image: url(../../images/image-header-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 447px;
+        width: 540px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: $softViolet;
+            opacity: 0.45;        
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+        }
+    }
+    .data {
+        display: flex;
+        padding-top: 80px;
+        padding-bottom: 65px;
+    
+        &--list {
+            text-align: left;
+            padding-bottom: 0px;
+            padding-right: 12%;
+            
+            &__h1 {
+                font-size: 24px;
+            }
+    
+            &__p {
+                padding-top: 7px;
+                color: $slightlyTransparentWhiteStatHeadings;
+            }
+        }
+    
+        &--list:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    .attribution {
+        top: 250px;
+    }
+}
